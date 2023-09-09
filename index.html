@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./index.css" />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <button class="nav-toggle" onclick="handleNav()"><img src="./images/icon-hamburger.svg" alt="burger menu"></button>
+        <ul class="links-container" id="links-container">
+          <li class="link"><a href="">About</a></li>
+          <li class="link"><a href="">Services</a></li>
+          <li class="link"><a href="">Projects</a></li>
+          <li class="link"><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="head-arrow">
+        <h1>WE ARE CREATIVES</h1>
+        <img src="./images/icon-arrow-down.svg" alt="arrow" />
+      </div>
+    </header>
+    <main class="main">
+      <section class="box-container">
+        <div class="box box1">
+          <div class="inner-box">
+            <h2>Transform your brand</h2>
+            <p>
+              We are a full-service creative agency specializing in helping
+              brands grow fast. Engage your clients through compelling visuals
+              that do most of the marketing for you.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4">
+          <div class="inner-box">
+            <h2>Stand out to the right audience</h2>
+            <p>
+              Using a collaborative formula of designers, researchers,
+              photographers, videographers, and copywriters, we’ll build and
+              extend your brand in digital places.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+        <div class="box box5">
+          <div class="inner-box">
+            <h2>Graphic design</h2>
+            <p>
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </div>
+        <div class="box box6">
+          <div class="inner-box">
+            <h2>Photography</h2>
+            <p>
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <h2>Client testimonials</h2>
+        <div class="cards-container">
+          <div class="card">
+            <div class="avatar">
+              <img src="./images/image-emily.jpg" alt="" />
+            </div>
+            <p>
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <div class="client-name">
+              <p class="name">Emily R.</p>
+              <p class="role">Marketing Director</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="avatar">
+              <img src="./images/image-thomas.jpg" alt="" />
+            </div>
+            <p>
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <div class="client-name">
+              <p class="name">Thomas S.</p>
+              <p class="role">Chief Operating Officer</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="avatar">
+              <img src="./images/image-jennie.jpg" alt="" />
+            </div>
+            <p>
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <div class="client-name">
+              <p class="name">Jennie F.</p>
+              <p class="role">Business Owner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="images-container">
+        <div class="img-div">
+          <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" />
+        </div>
+        <div class="img-div">
+          <img src="./images/desktop/image-gallery-orange.jpg" alt="" />
+        </div>
+        <div class="img-div">
+          <img src="./images/desktop/image-gallery-cone.jpg" alt="" />
+        </div>
+        <div class="img-div">
+          <img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" />
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <img src="./images/logo-green.svg" alt="logo" />
+      <div class="footer-links-container">
+        <a href="" class="link">About</a>
+        <a href="" class="link">Services</a>
+        <a href="" class="link">Projects</a>
+      </div>
+      <div class="social-icons">
+
+        <img src="./images/icon-facebook.svg" alt="facebook" class="icon" />
+        <img src="./images/icon-instagram.svg" alt="instagram" class="icon" />
+        <img src="./images/icon-twitter.svg" alt="twitter" class="icon" />
+        <img src="./images/icon-pinterest.svg" alt="pinterest" class="icon" />
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/samReacts" target="_blank">Somesh Nitnavare</a>.
+      </div>
+    </footer>
+    <script>
+      function handleNav(){
+        const links = document.getElementById('links-container');
+        links.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
